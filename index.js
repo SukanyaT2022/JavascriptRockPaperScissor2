@@ -114,4 +114,14 @@ function winOrDraw(playerChoice, robotChoice) {
   }
   document.getElementById('playerScoreId').innerHTML = "Player's score: " + playerScore
   document.getElementById('robotScoreId').innerHTML = "Robot's score: " + robotScore
+
+ if(round == 6){
+    if(playerScore>robotScore){
+     document.getElementById('finalResult').innerText = "Final Player Wins!"
+     }else if(playerScore<robotScore){
+       document.getElementById('finalResult').innerText = "Final Robot Wins!"
+     }else{
+       document.getElementById('finalResult').innerText = "Final Draw!"
+     }
+   }
 }
